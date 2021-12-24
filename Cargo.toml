@@ -1,0 +1,2 @@
+[workspace]
+members = ["6-input/input", "7-guessing-game/game"]
