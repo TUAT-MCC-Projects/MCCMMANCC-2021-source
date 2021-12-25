@@ -10,7 +10,7 @@ fn main() {
     loop {
         println!("Please input your guess.");
 
-        let mut guess: String = input().get();
+        let guess: String = input().get();
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
