@@ -1,2 +1,6 @@
 [workspace]
-members = ["6-input/input", "7-guessing-game/game"]
+members = [
+    "6-input/input",
+    "7-guessing-game/game",
+    "8-http-server/rocket-server"
+]
