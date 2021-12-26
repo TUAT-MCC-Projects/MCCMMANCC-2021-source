@@ -6,6 +6,11 @@ fn index() -> &'static str {
     "Hello, world!"
 }
 
+#[get("/mccmmancc/hello")]
+fn mccmmancc() -> &'static str {
+    "MCCMMANCCに参加してくれてありがとうございます！"
+}
+
 #[get("/<name>")]
 fn hello(name: &str) -> String {
     format!("Hello, {}!", name)
@@ -13,5 +18,5 @@ fn hello(name: &str) -> String {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, hello])
+    rocket::build().mount("/", routes![index, mccmmancc, hello])
 }
